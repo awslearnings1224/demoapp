@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "22Mar-Sample-App",
+=======
+  "name": "Branch2-Sample-App",
+>>>>>>> cab7799b717fe930ddf27a0df4c72eba1fe811b1
   "version": "0.0.1",
   "private": true,
   "dependencies": {},
