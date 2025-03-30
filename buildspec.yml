@@ -20,3 +20,7 @@ phases:
   post_build:
     commands:
       - echo "we are in the post build phase"
+
+artifacts:
+  files:
+    - arn:aws:s3:::codepipeline-ap-south-1-9766f5c20f27-4e0f-8384-e06c66a8b922
