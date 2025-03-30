@@ -15,13 +15,15 @@ phases:
     commands:
       - echo "we are in the build block"
       - echo "we will run some tests"
+      - mkdir -p build_output
       - grep -Fq "Congratulations" index.html
 
   post_build:
     commands:
-      - echo "we are in the post build phase"
+      - echo "Uploading artifacts to S3..."
+      - aws s3 cp build_output/ s3://cb-bucket11/build-artifacts/ --recursive
 
 artifacts:
   files:
-    - cb-bucket11/**  # Include all files inside the build_output directory
+    - build_output/**  # Include all files inside the build_output directory
   discard-paths: no
