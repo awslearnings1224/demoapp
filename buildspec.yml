@@ -20,9 +20,3 @@ phases:
   post_build:
     commands:
       - echo "we are in the post build phase"
-      
-artifacts:
-  files:
-    - build_output/**  # Include all files inside the build_output directory
-  name: BuildArtifact  # Name of the artifact
-  discard-paths: no    # Retain folder structure
