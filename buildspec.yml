@@ -23,5 +23,5 @@ phases:
 
 artifacts:
   files:
-    - build_output/**  # Include all files inside the build_output directory
+    - cb-bucket11/**  # Include all files inside the build_output directory
   discard-paths: no
